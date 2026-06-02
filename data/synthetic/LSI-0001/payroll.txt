@@ -1,0 +1,10 @@
+Case ID: LSI-0001
+Worker: Malik Johnson
+Employer: Metro Cleaners
+Paid hours: 44.0
+Hourly rate: $16.0
+Overtime hours: 6.0
+No overtime premium.
+Total paid: $704
+Meal break deducted: yes
+Premium paid: no

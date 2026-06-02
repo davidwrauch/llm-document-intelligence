@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0024",
+  "worker_name": "Ana Rivera",
+  "employer_name": "Summit Home Care",
+  "dates_worked": [
+    "2026-05-08",
+    "2026-05-09",
+    "2026-05-10",
+    "2026-05-11",
+    "2026-05-12"
+  ],
+  "scheduled_hours": 42.0,
+  "clocked_hours": 42.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 15.0,
+  "overtime_hours": 2.0,
+  "total_paid": 600,
+  "likely_violation": true,
+  "violation_types": [
+    "employer_conflict",
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 45.0,
+  "contradiction_expected": true
+}

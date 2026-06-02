@@ -1,0 +1,25 @@
+{
+  "case_id": "LSI-0025",
+  "worker_name": "Malik Johnson",
+  "employer_name": "Bright Deli LLC",
+  "dates_worked": [
+    "2026-05-09",
+    "2026-05-10",
+    "2026-05-11",
+    "2026-05-12",
+    "2026-05-13"
+  ],
+  "scheduled_hours": 44.0,
+  "clocked_hours": 46.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 16.0,
+  "overtime_hours": 6.0,
+  "total_paid": 640,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 144.0,
+  "contradiction_expected": true
+}

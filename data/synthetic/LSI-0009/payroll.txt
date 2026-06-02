@@ -1,0 +1,10 @@
+Case ID: LSI-0009
+Worker: Malik Johnson
+Employer: Summit Home Care
+Paid hours: 40.0
+Hourly rate: $18.0
+Overtime hours: 4.0
+No overtime premium.
+Total paid: $720
+Meal break deducted: no
+Premium paid: yes

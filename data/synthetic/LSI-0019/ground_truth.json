@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0019",
+  "worker_name": "Diego Torres",
+  "employer_name": "Summit Home Care",
+  "dates_worked": [
+    "2026-05-13",
+    "2026-05-14",
+    "2026-05-15",
+    "2026-05-16",
+    "2026-05-17"
+  ],
+  "scheduled_hours": 48.0,
+  "clocked_hours": 48.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 16.0,
+  "overtime_hours": 8.0,
+  "total_paid": 640,
+  "likely_violation": true,
+  "violation_types": [
+    "employer_conflict",
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 192.0,
+  "contradiction_expected": true
+}

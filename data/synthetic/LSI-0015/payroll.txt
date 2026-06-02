@@ -1,0 +1,10 @@
+Case ID: LSI-0015
+Worker: Jordan Lee
+Employer: Bright Deli LLC
+Paid hours: 40.0
+Hourly rate: $18.0
+Overtime hours: 10.0
+No overtime premium.
+Total paid: $720
+Meal break deducted: no
+Premium paid: no

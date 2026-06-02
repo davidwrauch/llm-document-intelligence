@@ -1,0 +1,10 @@
+Case ID: LSI-0002
+Worker: Priya Shah
+Employer: Northstar Bistro
+Paid hours: 44.0
+Hourly rate: $17.0
+Overtime hours: 6.0
+No overtime premium.
+Total paid: $748
+Meal break deducted: no
+Premium paid: no

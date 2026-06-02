@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0007",
+  "worker_name": "Jordan Lee",
+  "employer_name": "Northstar Bistro",
+  "dates_worked": [
+    "2026-05-11",
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14",
+    "2026-05-15"
+  ],
+  "scheduled_hours": 48.0,
+  "clocked_hours": 48.0,
+  "paid_hours": 46.0,
+  "hourly_rate": 16.0,
+  "overtime_hours": 8.0,
+  "total_paid": 736,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "spread_of_hours",
+    "underpayment"
+  ],
+  "estimated_underpayment": 96.0,
+  "contradiction_expected": true
+}

@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0016",
+  "worker_name": "Ana Rivera",
+  "employer_name": "Metro Cleaners",
+  "dates_worked": [
+    "2026-05-10",
+    "2026-05-11",
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14"
+  ],
+  "scheduled_hours": 42.0,
+  "clocked_hours": 44.0,
+  "paid_hours": 42.0,
+  "hourly_rate": 19.0,
+  "overtime_hours": 4.0,
+  "total_paid": 798,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "underpayment",
+    "unpaid_break"
+  ],
+  "estimated_underpayment": 76.0,
+  "contradiction_expected": true
+}

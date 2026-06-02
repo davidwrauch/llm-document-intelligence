@@ -1,0 +1,7 @@
+Case ID: LSI-0018
+Worker: Priya Shah
+Employer: Harbor Grocery
+Dates worked: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16
+Clocked hours: 46.0
+Overtime hours: 6.0
+Break deducted: no

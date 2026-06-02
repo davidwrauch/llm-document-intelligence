@@ -1,0 +1,25 @@
+{
+  "case_id": "LSI-0010",
+  "worker_name": "Priya Shah",
+  "employer_name": "Bright Deli LLC",
+  "dates_worked": [
+    "2026-05-04",
+    "2026-05-05",
+    "2026-05-06",
+    "2026-05-07",
+    "2026-05-08"
+  ],
+  "scheduled_hours": 46.0,
+  "clocked_hours": 48.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 19.0,
+  "overtime_hours": 8.0,
+  "total_paid": 760,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 228.0,
+  "contradiction_expected": true
+}

@@ -1,0 +1,10 @@
+Case ID: LSI-0025
+Worker: Malik Johnson
+Employer: Bright Deli LLC
+Paid hours: 40.0
+Hourly rate: $16.0
+Overtime hours: 6.0
+No overtime premium.
+Total paid: $640
+Meal break deducted: no
+Premium paid: no

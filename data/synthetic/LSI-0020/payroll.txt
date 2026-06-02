@@ -1,0 +1,10 @@
+Case ID: LSI-0020
+Worker: Mei Chen
+Employer: Bright Deli LLC
+Paid hours: 40.0
+Hourly rate: $17.0
+Overtime hours: 4.0
+No overtime premium.
+Total paid: $680
+Meal break deducted: no
+Premium paid: no

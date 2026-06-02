@@ -1,0 +1,10 @@
+Case ID: LSI-0019
+Worker: Diego Torres
+Employer: Summit Home Care
+Paid hours: 40.0
+Hourly rate: $16.0
+Overtime hours: 8.0
+No overtime premium.
+Total paid: $640
+Meal break deducted: no
+Premium paid: yes

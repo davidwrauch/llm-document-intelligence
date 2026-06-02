@@ -1,0 +1,10 @@
+Case ID: LSI-0010
+Worker: Priya Shah
+Employer: Bright Deli LLC
+Paid hours: 40.0
+Hourly rate: $19.0
+Overtime hours: 8.0
+No overtime premium.
+Total paid: $760
+Meal break deducted: no
+Premium paid: no

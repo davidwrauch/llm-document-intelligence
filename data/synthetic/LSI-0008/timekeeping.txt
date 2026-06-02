@@ -1,0 +1,7 @@
+Case ID: LSI-0008
+Worker: Ana Rivera
+Employer: Harbor Grocery
+Dates worked: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16
+Clocked hours: 42.0
+Overtime hours: 2.0
+Break deducted: no

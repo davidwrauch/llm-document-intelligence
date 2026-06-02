@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0006",
+  "worker_name": "Rosa Kim",
+  "employer_name": "Metro Cleaners",
+  "dates_worked": [
+    "2026-05-10",
+    "2026-05-11",
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14"
+  ],
+  "scheduled_hours": 46.0,
+  "clocked_hours": 48.0,
+  "paid_hours": 46.0,
+  "hourly_rate": 15.0,
+  "overtime_hours": 8.0,
+  "total_paid": 690,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "underpayment",
+    "unpaid_break"
+  ],
+  "estimated_underpayment": 90.0,
+  "contradiction_expected": true
+}
