@@ -1,0 +1,6 @@
+Case ID: LSI-0005
+Worker: Sam Patel
+Employer: Bright Deli LLC
+Dates: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13
+Scheduled hours: 44.0
+Shift notes: spread-of-hours issue not central.

@@ -1,0 +1,7 @@
+Case ID: LSI-0003
+Worker: Diego Torres
+Employer: Harbor Grocery
+Dates worked: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11
+Clocked hours: 48.0
+Overtime hours: 8.0
+Break deducted: no

@@ -1,0 +1,10 @@
+Case ID: LSI-0007
+Worker: Jordan Lee
+Employer: Northstar Bistro
+Paid hours: 46.0
+Hourly rate: $16.0
+Overtime hours: 8.0
+No overtime premium.
+Total paid: $736
+Meal break deducted: no
+Premium paid: no

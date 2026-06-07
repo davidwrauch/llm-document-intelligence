@@ -1,0 +1,7 @@
+Case ID: LSI-0002
+Worker: Priya Shah
+Employer: Northstar Bistro
+Dates worked: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10
+Clocked hours: 46.0
+Overtime hours: 6.0
+Break deducted: no

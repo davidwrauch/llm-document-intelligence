@@ -1,0 +1,10 @@
+Case ID: LSI-0014
+Worker: Rosa Kim
+Employer: Summit Home Care
+Paid hours: 40.0
+Hourly rate: $17.0
+Overtime hours: 6.0
+No overtime premium.
+Total paid: $680
+Meal break deducted: no
+Premium paid: yes

@@ -1,0 +1,6 @@
+Case ID: LSI-0006
+Worker: Rosa Kim
+Employer: Metro Cleaners
+Dates: 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14
+Scheduled hours: 46.0
+Shift notes: spread-of-hours issue not central.

@@ -1,0 +1,25 @@
+{
+  "case_id": "LSI-0015",
+  "worker_name": "Jordan Lee",
+  "employer_name": "Bright Deli LLC",
+  "dates_worked": [
+    "2026-05-09",
+    "2026-05-10",
+    "2026-05-11",
+    "2026-05-12",
+    "2026-05-13"
+  ],
+  "scheduled_hours": 48.0,
+  "clocked_hours": 50.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 18.0,
+  "overtime_hours": 10.0,
+  "total_paid": 720,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 270.0,
+  "contradiction_expected": true
+}

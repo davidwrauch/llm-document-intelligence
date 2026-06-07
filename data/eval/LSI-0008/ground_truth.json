@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0008",
+  "worker_name": "Ana Rivera",
+  "employer_name": "Harbor Grocery",
+  "dates_worked": [
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14",
+    "2026-05-15",
+    "2026-05-16"
+  ],
+  "scheduled_hours": 42.0,
+  "clocked_hours": 42.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 17.0,
+  "overtime_hours": 2.0,
+  "total_paid": 714,
+  "likely_violation": true,
+  "violation_types": [
+    "missing_premium",
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 17.0,
+  "contradiction_expected": true
+}

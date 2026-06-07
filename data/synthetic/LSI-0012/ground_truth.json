@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0012",
+  "worker_name": "Mei Chen",
+  "employer_name": "Northstar Bistro",
+  "dates_worked": [
+    "2026-05-06",
+    "2026-05-07",
+    "2026-05-08",
+    "2026-05-09",
+    "2026-05-10"
+  ],
+  "scheduled_hours": 42.0,
+  "clocked_hours": 42.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 15.0,
+  "overtime_hours": 2.0,
+  "total_paid": 600,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "spread_of_hours",
+    "underpayment"
+  ],
+  "estimated_underpayment": 45.0,
+  "contradiction_expected": true
+}

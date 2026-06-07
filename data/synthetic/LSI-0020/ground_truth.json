@@ -1,0 +1,25 @@
+{
+  "case_id": "LSI-0020",
+  "worker_name": "Mei Chen",
+  "employer_name": "Bright Deli LLC",
+  "dates_worked": [
+    "2026-05-04",
+    "2026-05-05",
+    "2026-05-06",
+    "2026-05-07",
+    "2026-05-08"
+  ],
+  "scheduled_hours": 42.0,
+  "clocked_hours": 44.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 17.0,
+  "overtime_hours": 4.0,
+  "total_paid": 680,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 102.0,
+  "contradiction_expected": true
+}

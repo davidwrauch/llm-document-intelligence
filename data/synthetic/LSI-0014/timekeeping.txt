@@ -1,0 +1,7 @@
+Case ID: LSI-0014
+Worker: Rosa Kim
+Employer: Summit Home Care
+Dates worked: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12
+Clocked hours: 46.0
+Overtime hours: 6.0
+Break deducted: no

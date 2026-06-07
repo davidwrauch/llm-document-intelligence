@@ -1,0 +1,6 @@
+Case ID: LSI-0021
+Worker: Sam Patel
+Employer: Metro Cleaners
+Dates: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09
+Scheduled hours: 44.0
+Shift notes: spread-of-hours issue not central.

@@ -1,0 +1,7 @@
+Case ID: LSI-0025
+Worker: Malik Johnson
+Employer: Bright Deli LLC
+Dates worked: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13
+Clocked hours: 46.0
+Overtime hours: 6.0
+Break deducted: no

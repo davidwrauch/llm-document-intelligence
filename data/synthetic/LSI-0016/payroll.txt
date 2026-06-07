@@ -1,0 +1,10 @@
+Case ID: LSI-0016
+Worker: Ana Rivera
+Employer: Metro Cleaners
+Paid hours: 42.0
+Hourly rate: $19.0
+Overtime hours: 4.0
+No overtime premium.
+Total paid: $798
+Meal break deducted: yes
+Premium paid: no

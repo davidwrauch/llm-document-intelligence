@@ -1,0 +1,5652 @@
+[
+  {
+    "case_facts": {
+      "case_id": "LSI-0001",
+      "worker_name": "Malik Johnson",
+      "employer_name": "Metro Cleaners",
+      "dates_worked": [
+        "2026-05-05",
+        "2026-05-06",
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09"
+      ],
+      "scheduled_hours": 44.0,
+      "clocked_hours": 46.0,
+      "paid_hours": 44.0,
+      "hourly_rate": 16.0,
+      "overtime_hours": 6.0,
+      "overtime_paid": false,
+      "total_paid": 704.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 80.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 46.0 hours but payroll shows 44.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 6.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "break_deduction_disputed",
+          "description": "Worker says no break was taken, while payroll deducted break time.",
+          "documents": [
+            "worker_complaint",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0001",
+          "document_type": "employer_message",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0001",
+          "document_type": "payroll",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 44.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": 6.0,
+          "overtime_paid": false,
+          "total_paid": 704.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nPaid hours: 44.0\nHourly rate: $16.0\nOvertime hours: 6.0\nNo overtime premium.\nTotal paid: $704\nMeal break deducted: yes\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0001",
+          "document_type": "schedule",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09"
+          ],
+          "scheduled_hours": 44.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nDates: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nScheduled hours: 44.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0001",
+          "document_type": "timekeeping",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 6.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nDates worked: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nClocked hours: 46.0\nOvertime hours: 6.0\nBreak deducted: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0001",
+          "document_type": "worker_complaint",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": 44.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": false,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nDates worked: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nI clocked 46.0 hours at $16.0/hour. I was paid for 44.0 hours and believe I was underpaid. I was not able to take a break and no break taken. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 83,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $80.00 (+13).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0002",
+      "worker_name": "Priya Shah",
+      "employer_name": "Northstar Bistro",
+      "dates_worked": [
+        "2026-05-06",
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10"
+      ],
+      "scheduled_hours": 46.0,
+      "clocked_hours": 46.0,
+      "paid_hours": 44.0,
+      "hourly_rate": 17.0,
+      "overtime_hours": 6.0,
+      "overtime_paid": false,
+      "total_paid": 748.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 85.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 46.0 hours but payroll shows 44.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 46.0 hours but payroll shows 44.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 6.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0002",
+          "document_type": "employer_message",
+          "worker_name": "Priya Shah",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0002\nWorker: Priya Shah\nEmployer: Northstar Bistro\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0002",
+          "document_type": "payroll",
+          "worker_name": "Priya Shah",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 44.0,
+          "hourly_rate": 17.0,
+          "overtime_hours": 6.0,
+          "overtime_paid": false,
+          "total_paid": 748.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0002\nWorker: Priya Shah\nEmployer: Northstar Bistro\nPaid hours: 44.0\nHourly rate: $17.0\nOvertime hours: 6.0\nNo overtime premium.\nTotal paid: $748\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0002",
+          "document_type": "schedule",
+          "worker_name": "Priya Shah",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10"
+          ],
+          "scheduled_hours": 46.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0002\nWorker: Priya Shah\nEmployer: Northstar Bistro\nDates: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10\nScheduled hours: 46.0\nShift notes: spread-of-hours issue observed.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0002",
+          "document_type": "timekeeping",
+          "worker_name": "Priya Shah",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 6.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0002\nWorker: Priya Shah\nEmployer: Northstar Bistro\nDates worked: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10\nClocked hours: 46.0\nOvertime hours: 6.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0002",
+          "document_type": "worker_complaint",
+          "worker_name": "Priya Shah",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": 44.0,
+          "hourly_rate": 17.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0002\nWorker: Priya Shah\nEmployer: Northstar Bistro\nDates worked: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10\nI clocked 46.0 hours at $17.0/hour. I was paid for 44.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 83,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $85.00 (+13).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0003",
+      "worker_name": "Diego Torres",
+      "employer_name": "Harbor Grocery",
+      "dates_worked": [
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11"
+      ],
+      "scheduled_hours": 48.0,
+      "clocked_hours": 48.0,
+      "paid_hours": 46.0,
+      "hourly_rate": 18.0,
+      "overtime_hours": 8.0,
+      "overtime_paid": false,
+      "total_paid": 864.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 72.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 48.0 hours but payroll shows 46.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 48.0 hours but payroll shows 46.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 8.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0003",
+          "document_type": "employer_message",
+          "worker_name": "Diego Torres",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0003\nWorker: Diego Torres\nEmployer: Harbor Grocery\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0003",
+          "document_type": "payroll",
+          "worker_name": "Diego Torres",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 46.0,
+          "hourly_rate": 18.0,
+          "overtime_hours": 8.0,
+          "overtime_paid": false,
+          "total_paid": 864.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0003\nWorker: Diego Torres\nEmployer: Harbor Grocery\nPaid hours: 46.0\nHourly rate: $18.0\nOvertime hours: 8.0\nNo overtime premium.\nTotal paid: $864\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0003",
+          "document_type": "schedule",
+          "worker_name": "Diego Torres",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11"
+          ],
+          "scheduled_hours": 48.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0003\nWorker: Diego Torres\nEmployer: Harbor Grocery\nDates: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11\nScheduled hours: 48.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0003",
+          "document_type": "timekeeping",
+          "worker_name": "Diego Torres",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 8.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0003\nWorker: Diego Torres\nEmployer: Harbor Grocery\nDates worked: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11\nClocked hours: 48.0\nOvertime hours: 8.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0003",
+          "document_type": "worker_complaint",
+          "worker_name": "Diego Torres",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": 46.0,
+          "hourly_rate": 18.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0003\nWorker: Diego Torres\nEmployer: Harbor Grocery\nDates worked: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11\nI clocked 48.0 hours at $18.0/hour. I was paid for 46.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 82,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $72.00 (+12).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0004",
+      "worker_name": "Mei Chen",
+      "employer_name": "Summit Home Care",
+      "dates_worked": [
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11",
+        "2026-05-12"
+      ],
+      "scheduled_hours": 42.0,
+      "clocked_hours": 42.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 19.0,
+      "overtime_hours": 2.0,
+      "overtime_paid": false,
+      "total_paid": 760.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 57.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 42.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 42.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 2.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0004",
+          "document_type": "employer_message",
+          "worker_name": "Mei Chen",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0004\nWorker: Mei Chen\nEmployer: Summit Home Care\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0004",
+          "document_type": "payroll",
+          "worker_name": "Mei Chen",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 19.0,
+          "overtime_hours": 2.0,
+          "overtime_paid": false,
+          "total_paid": 760.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0004\nWorker: Mei Chen\nEmployer: Summit Home Care\nPaid hours: 40.0\nHourly rate: $19.0\nOvertime hours: 2.0\nNo overtime premium.\nTotal paid: $760\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0004",
+          "document_type": "schedule",
+          "worker_name": "Mei Chen",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12"
+          ],
+          "scheduled_hours": 42.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0004\nWorker: Mei Chen\nEmployer: Summit Home Care\nDates: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12\nScheduled hours: 42.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0004",
+          "document_type": "timekeeping",
+          "worker_name": "Mei Chen",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 42.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 2.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0004\nWorker: Mei Chen\nEmployer: Summit Home Care\nDates worked: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12\nClocked hours: 42.0\nOvertime hours: 2.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0004",
+          "document_type": "worker_complaint",
+          "worker_name": "Mei Chen",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 42.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 19.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0004\nWorker: Mei Chen\nEmployer: Summit Home Care\nDates worked: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12\nI clocked 42.0 hours at $19.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 82,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $57.00 (+12).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0005",
+      "worker_name": "Sam Patel",
+      "employer_name": "Bright Deli LLC",
+      "dates_worked": [
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11",
+        "2026-05-12",
+        "2026-05-13"
+      ],
+      "scheduled_hours": 44.0,
+      "clocked_hours": 46.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 20.0,
+      "overtime_hours": 6.0,
+      "overtime_paid": false,
+      "total_paid": 800.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 180.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 46.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 44.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 6.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0005",
+          "document_type": "employer_message",
+          "worker_name": "Sam Patel",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0005\nWorker: Sam Patel\nEmployer: Bright Deli LLC\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0005",
+          "document_type": "payroll",
+          "worker_name": "Sam Patel",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 20.0,
+          "overtime_hours": 6.0,
+          "overtime_paid": false,
+          "total_paid": 800.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0005\nWorker: Sam Patel\nEmployer: Bright Deli LLC\nPaid hours: 40.0\nHourly rate: $20.0\nOvertime hours: 6.0\nNo overtime premium.\nTotal paid: $800\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0005",
+          "document_type": "schedule",
+          "worker_name": "Sam Patel",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
+          ],
+          "scheduled_hours": 44.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0005\nWorker: Sam Patel\nEmployer: Bright Deli LLC\nDates: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13\nScheduled hours: 44.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0005",
+          "document_type": "timekeeping",
+          "worker_name": "Sam Patel",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 6.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0005\nWorker: Sam Patel\nEmployer: Bright Deli LLC\nDates worked: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13\nClocked hours: 46.0\nOvertime hours: 6.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0005",
+          "document_type": "worker_complaint",
+          "worker_name": "Sam Patel",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 20.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0005\nWorker: Sam Patel\nEmployer: Bright Deli LLC\nDates worked: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13\nI clocked 46.0 hours at $20.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 87,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $180.00 (+17).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0006",
+      "worker_name": "Rosa Kim",
+      "employer_name": "Metro Cleaners",
+      "dates_worked": [
+        "2026-05-10",
+        "2026-05-11",
+        "2026-05-12",
+        "2026-05-13",
+        "2026-05-14"
+      ],
+      "scheduled_hours": 46.0,
+      "clocked_hours": 48.0,
+      "paid_hours": 46.0,
+      "hourly_rate": 15.0,
+      "overtime_hours": 8.0,
+      "overtime_paid": false,
+      "total_paid": 690.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 90.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 48.0 hours but payroll shows 46.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 8.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "break_deduction_disputed",
+          "description": "Worker says no break was taken, while payroll deducted break time.",
+          "documents": [
+            "worker_complaint",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0006",
+          "document_type": "employer_message",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0006\nWorker: Rosa Kim\nEmployer: Metro Cleaners\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0006",
+          "document_type": "payroll",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 46.0,
+          "hourly_rate": 15.0,
+          "overtime_hours": 8.0,
+          "overtime_paid": false,
+          "total_paid": 690.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0006\nWorker: Rosa Kim\nEmployer: Metro Cleaners\nPaid hours: 46.0\nHourly rate: $15.0\nOvertime hours: 8.0\nNo overtime premium.\nTotal paid: $690\nMeal break deducted: yes\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0006",
+          "document_type": "schedule",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14"
+          ],
+          "scheduled_hours": 46.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0006\nWorker: Rosa Kim\nEmployer: Metro Cleaners\nDates: 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14\nScheduled hours: 46.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0006",
+          "document_type": "timekeeping",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 8.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0006\nWorker: Rosa Kim\nEmployer: Metro Cleaners\nDates worked: 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14\nClocked hours: 48.0\nOvertime hours: 8.0\nBreak deducted: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0006",
+          "document_type": "worker_complaint",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": 46.0,
+          "hourly_rate": 15.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": false,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0006\nWorker: Rosa Kim\nEmployer: Metro Cleaners\nDates worked: 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14\nI clocked 48.0 hours at $15.0/hour. I was paid for 46.0 hours and believe I was underpaid. I was not able to take a break and no break taken. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 83,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $90.00 (+13).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0007",
+      "worker_name": "Jordan Lee",
+      "employer_name": "Northstar Bistro",
+      "dates_worked": [
+        "2026-05-11",
+        "2026-05-12",
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15"
+      ],
+      "scheduled_hours": 48.0,
+      "clocked_hours": 48.0,
+      "paid_hours": 46.0,
+      "hourly_rate": 16.0,
+      "overtime_hours": 8.0,
+      "overtime_paid": false,
+      "total_paid": 736.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 96.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 48.0 hours but payroll shows 46.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 48.0 hours but payroll shows 46.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 8.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0007",
+          "document_type": "employer_message",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0007\nWorker: Jordan Lee\nEmployer: Northstar Bistro\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0007",
+          "document_type": "payroll",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 46.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": 8.0,
+          "overtime_paid": false,
+          "total_paid": 736.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0007\nWorker: Jordan Lee\nEmployer: Northstar Bistro\nPaid hours: 46.0\nHourly rate: $16.0\nOvertime hours: 8.0\nNo overtime premium.\nTotal paid: $736\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0007",
+          "document_type": "schedule",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15"
+          ],
+          "scheduled_hours": 48.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0007\nWorker: Jordan Lee\nEmployer: Northstar Bistro\nDates: 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15\nScheduled hours: 48.0\nShift notes: spread-of-hours issue observed.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0007",
+          "document_type": "timekeeping",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 8.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0007\nWorker: Jordan Lee\nEmployer: Northstar Bistro\nDates worked: 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15\nClocked hours: 48.0\nOvertime hours: 8.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0007",
+          "document_type": "worker_complaint",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": 46.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0007\nWorker: Jordan Lee\nEmployer: Northstar Bistro\nDates worked: 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15\nI clocked 48.0 hours at $16.0/hour. I was paid for 46.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 83,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $96.00 (+13).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0008",
+      "worker_name": "Ana Rivera",
+      "employer_name": "Harbor Grocery",
+      "dates_worked": [
+        "2026-05-12",
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15",
+        "2026-05-16"
+      ],
+      "scheduled_hours": 42.0,
+      "clocked_hours": 42.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 17.0,
+      "overtime_hours": 2.0,
+      "overtime_paid": false,
+      "total_paid": 714.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 17.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 42.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 42.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 2.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0008",
+          "document_type": "employer_message",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0008\nWorker: Ana Rivera\nEmployer: Harbor Grocery\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0008",
+          "document_type": "payroll",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 17.0,
+          "overtime_hours": 2.0,
+          "overtime_paid": false,
+          "total_paid": 714.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0008\nWorker: Ana Rivera\nEmployer: Harbor Grocery\nPaid hours: 40.0\nHourly rate: $17.0\nOvertime hours: 2.0\nNo overtime premium.\nTotal paid: $714\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0008",
+          "document_type": "schedule",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16"
+          ],
+          "scheduled_hours": 42.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0008\nWorker: Ana Rivera\nEmployer: Harbor Grocery\nDates: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16\nScheduled hours: 42.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0008",
+          "document_type": "timekeeping",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 42.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 2.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0008\nWorker: Ana Rivera\nEmployer: Harbor Grocery\nDates worked: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16\nClocked hours: 42.0\nOvertime hours: 2.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0008",
+          "document_type": "worker_complaint",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 42.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 17.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0008\nWorker: Ana Rivera\nEmployer: Harbor Grocery\nDates worked: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16\nI clocked 42.0 hours at $17.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 80,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $17.00 (+10).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0009",
+      "worker_name": "Malik Johnson",
+      "employer_name": "Summit Home Care",
+      "dates_worked": [
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15",
+        "2026-05-16",
+        "2026-05-17"
+      ],
+      "scheduled_hours": 44.0,
+      "clocked_hours": 44.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 18.0,
+      "overtime_hours": 4.0,
+      "overtime_paid": false,
+      "total_paid": 720.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 108.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 44.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 44.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 4.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0009",
+          "document_type": "employer_message",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0009\nWorker: Malik Johnson\nEmployer: Summit Home Care\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0009",
+          "document_type": "payroll",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 18.0,
+          "overtime_hours": 4.0,
+          "overtime_paid": false,
+          "total_paid": 720.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0009\nWorker: Malik Johnson\nEmployer: Summit Home Care\nPaid hours: 40.0\nHourly rate: $18.0\nOvertime hours: 4.0\nNo overtime premium.\nTotal paid: $720\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0009",
+          "document_type": "schedule",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16",
+            "2026-05-17"
+          ],
+          "scheduled_hours": 44.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0009\nWorker: Malik Johnson\nEmployer: Summit Home Care\nDates: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, 2026-05-17\nScheduled hours: 44.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0009",
+          "document_type": "timekeeping",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16",
+            "2026-05-17"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 4.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0009\nWorker: Malik Johnson\nEmployer: Summit Home Care\nDates worked: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, 2026-05-17\nClocked hours: 44.0\nOvertime hours: 4.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0009",
+          "document_type": "worker_complaint",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16",
+            "2026-05-17"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 18.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0009\nWorker: Malik Johnson\nEmployer: Summit Home Care\nDates worked: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, 2026-05-17\nI clocked 44.0 hours at $18.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 84,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $108.00 (+14).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0010",
+      "worker_name": "Priya Shah",
+      "employer_name": "Bright Deli LLC",
+      "dates_worked": [
+        "2026-05-04",
+        "2026-05-05",
+        "2026-05-06",
+        "2026-05-07",
+        "2026-05-08"
+      ],
+      "scheduled_hours": 46.0,
+      "clocked_hours": 48.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 19.0,
+      "overtime_hours": 8.0,
+      "overtime_paid": false,
+      "total_paid": 760.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 228.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 48.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 46.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 8.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0010",
+          "document_type": "employer_message",
+          "worker_name": "Priya Shah",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0010\nWorker: Priya Shah\nEmployer: Bright Deli LLC\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0010",
+          "document_type": "payroll",
+          "worker_name": "Priya Shah",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 19.0,
+          "overtime_hours": 8.0,
+          "overtime_paid": false,
+          "total_paid": 760.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0010\nWorker: Priya Shah\nEmployer: Bright Deli LLC\nPaid hours: 40.0\nHourly rate: $19.0\nOvertime hours: 8.0\nNo overtime premium.\nTotal paid: $760\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0010",
+          "document_type": "schedule",
+          "worker_name": "Priya Shah",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-04",
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08"
+          ],
+          "scheduled_hours": 46.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0010\nWorker: Priya Shah\nEmployer: Bright Deli LLC\nDates: 2026-05-04, 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08\nScheduled hours: 46.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0010",
+          "document_type": "timekeeping",
+          "worker_name": "Priya Shah",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-04",
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 8.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0010\nWorker: Priya Shah\nEmployer: Bright Deli LLC\nDates worked: 2026-05-04, 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08\nClocked hours: 48.0\nOvertime hours: 8.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0010",
+          "document_type": "worker_complaint",
+          "worker_name": "Priya Shah",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-04",
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 19.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0010\nWorker: Priya Shah\nEmployer: Bright Deli LLC\nDates worked: 2026-05-04, 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08\nI clocked 48.0 hours at $19.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 89,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $228.00 (+19).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0011",
+      "worker_name": "Diego Torres",
+      "employer_name": "Metro Cleaners",
+      "dates_worked": [
+        "2026-05-05",
+        "2026-05-06",
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09"
+      ],
+      "scheduled_hours": 48.0,
+      "clocked_hours": 50.0,
+      "paid_hours": 48.0,
+      "hourly_rate": 20.0,
+      "overtime_hours": 10.0,
+      "overtime_paid": false,
+      "total_paid": 960.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 140.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 50.0 hours but payroll shows 48.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 10.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "break_deduction_disputed",
+          "description": "Worker says no break was taken, while payroll deducted break time.",
+          "documents": [
+            "worker_complaint",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0011",
+          "document_type": "employer_message",
+          "worker_name": "Diego Torres",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0011\nWorker: Diego Torres\nEmployer: Metro Cleaners\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0011",
+          "document_type": "payroll",
+          "worker_name": "Diego Torres",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 48.0,
+          "hourly_rate": 20.0,
+          "overtime_hours": 10.0,
+          "overtime_paid": false,
+          "total_paid": 960.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0011\nWorker: Diego Torres\nEmployer: Metro Cleaners\nPaid hours: 48.0\nHourly rate: $20.0\nOvertime hours: 10.0\nNo overtime premium.\nTotal paid: $960\nMeal break deducted: yes\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0011",
+          "document_type": "schedule",
+          "worker_name": "Diego Torres",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09"
+          ],
+          "scheduled_hours": 48.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0011\nWorker: Diego Torres\nEmployer: Metro Cleaners\nDates: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nScheduled hours: 48.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0011",
+          "document_type": "timekeeping",
+          "worker_name": "Diego Torres",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 50.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 10.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0011\nWorker: Diego Torres\nEmployer: Metro Cleaners\nDates worked: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nClocked hours: 50.0\nOvertime hours: 10.0\nBreak deducted: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0011",
+          "document_type": "worker_complaint",
+          "worker_name": "Diego Torres",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 50.0,
+          "paid_hours": 48.0,
+          "hourly_rate": 20.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": false,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0011\nWorker: Diego Torres\nEmployer: Metro Cleaners\nDates worked: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nI clocked 50.0 hours at $20.0/hour. I was paid for 48.0 hours and believe I was underpaid. I was not able to take a break and no break taken. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 85,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $140.00 (+15).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0012",
+      "worker_name": "Mei Chen",
+      "employer_name": "Northstar Bistro",
+      "dates_worked": [
+        "2026-05-06",
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10"
+      ],
+      "scheduled_hours": 42.0,
+      "clocked_hours": 42.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 15.0,
+      "overtime_hours": 2.0,
+      "overtime_paid": false,
+      "total_paid": 600.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 45.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 42.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 42.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 2.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0012",
+          "document_type": "employer_message",
+          "worker_name": "Mei Chen",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0012\nWorker: Mei Chen\nEmployer: Northstar Bistro\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0012",
+          "document_type": "payroll",
+          "worker_name": "Mei Chen",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 15.0,
+          "overtime_hours": 2.0,
+          "overtime_paid": false,
+          "total_paid": 600.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0012\nWorker: Mei Chen\nEmployer: Northstar Bistro\nPaid hours: 40.0\nHourly rate: $15.0\nOvertime hours: 2.0\nNo overtime premium.\nTotal paid: $600\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0012",
+          "document_type": "schedule",
+          "worker_name": "Mei Chen",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10"
+          ],
+          "scheduled_hours": 42.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0012\nWorker: Mei Chen\nEmployer: Northstar Bistro\nDates: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10\nScheduled hours: 42.0\nShift notes: spread-of-hours issue observed.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0012",
+          "document_type": "timekeeping",
+          "worker_name": "Mei Chen",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 42.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 2.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0012\nWorker: Mei Chen\nEmployer: Northstar Bistro\nDates worked: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10\nClocked hours: 42.0\nOvertime hours: 2.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0012",
+          "document_type": "worker_complaint",
+          "worker_name": "Mei Chen",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 42.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 15.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0012\nWorker: Mei Chen\nEmployer: Northstar Bistro\nDates worked: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10\nI clocked 42.0 hours at $15.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 81,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $45.00 (+11).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0013",
+      "worker_name": "Sam Patel",
+      "employer_name": "Harbor Grocery",
+      "dates_worked": [
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11"
+      ],
+      "scheduled_hours": 44.0,
+      "clocked_hours": 44.0,
+      "paid_hours": 42.0,
+      "hourly_rate": 16.0,
+      "overtime_hours": 4.0,
+      "overtime_paid": false,
+      "total_paid": 704.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 32.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 44.0 hours but payroll shows 42.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 44.0 hours but payroll shows 42.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 4.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0013",
+          "document_type": "employer_message",
+          "worker_name": "Sam Patel",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0013\nWorker: Sam Patel\nEmployer: Harbor Grocery\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0013",
+          "document_type": "payroll",
+          "worker_name": "Sam Patel",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 42.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": 4.0,
+          "overtime_paid": false,
+          "total_paid": 704.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0013\nWorker: Sam Patel\nEmployer: Harbor Grocery\nPaid hours: 42.0\nHourly rate: $16.0\nOvertime hours: 4.0\nNo overtime premium.\nTotal paid: $704\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0013",
+          "document_type": "schedule",
+          "worker_name": "Sam Patel",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11"
+          ],
+          "scheduled_hours": 44.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0013\nWorker: Sam Patel\nEmployer: Harbor Grocery\nDates: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11\nScheduled hours: 44.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0013",
+          "document_type": "timekeeping",
+          "worker_name": "Sam Patel",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 4.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0013\nWorker: Sam Patel\nEmployer: Harbor Grocery\nDates worked: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11\nClocked hours: 44.0\nOvertime hours: 4.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0013",
+          "document_type": "worker_complaint",
+          "worker_name": "Sam Patel",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": 42.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0013\nWorker: Sam Patel\nEmployer: Harbor Grocery\nDates worked: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11\nI clocked 44.0 hours at $16.0/hour. I was paid for 42.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 81,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $32.00 (+11).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0014",
+      "worker_name": "Rosa Kim",
+      "employer_name": "Summit Home Care",
+      "dates_worked": [
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11",
+        "2026-05-12"
+      ],
+      "scheduled_hours": 46.0,
+      "clocked_hours": 46.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 17.0,
+      "overtime_hours": 6.0,
+      "overtime_paid": false,
+      "total_paid": 680.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 153.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 46.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 46.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 6.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0014",
+          "document_type": "employer_message",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0014\nWorker: Rosa Kim\nEmployer: Summit Home Care\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0014",
+          "document_type": "payroll",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 17.0,
+          "overtime_hours": 6.0,
+          "overtime_paid": false,
+          "total_paid": 680.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0014\nWorker: Rosa Kim\nEmployer: Summit Home Care\nPaid hours: 40.0\nHourly rate: $17.0\nOvertime hours: 6.0\nNo overtime premium.\nTotal paid: $680\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0014",
+          "document_type": "schedule",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12"
+          ],
+          "scheduled_hours": 46.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0014\nWorker: Rosa Kim\nEmployer: Summit Home Care\nDates: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12\nScheduled hours: 46.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0014",
+          "document_type": "timekeeping",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 6.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0014\nWorker: Rosa Kim\nEmployer: Summit Home Care\nDates worked: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12\nClocked hours: 46.0\nOvertime hours: 6.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0014",
+          "document_type": "worker_complaint",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 17.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0014\nWorker: Rosa Kim\nEmployer: Summit Home Care\nDates worked: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12\nI clocked 46.0 hours at $17.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 86,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $153.00 (+16).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0015",
+      "worker_name": "Jordan Lee",
+      "employer_name": "Bright Deli LLC",
+      "dates_worked": [
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11",
+        "2026-05-12",
+        "2026-05-13"
+      ],
+      "scheduled_hours": 48.0,
+      "clocked_hours": 50.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 18.0,
+      "overtime_hours": 10.0,
+      "overtime_paid": false,
+      "total_paid": 720.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 270.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 50.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 48.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 10.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0015",
+          "document_type": "employer_message",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0015\nWorker: Jordan Lee\nEmployer: Bright Deli LLC\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0015",
+          "document_type": "payroll",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 18.0,
+          "overtime_hours": 10.0,
+          "overtime_paid": false,
+          "total_paid": 720.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0015\nWorker: Jordan Lee\nEmployer: Bright Deli LLC\nPaid hours: 40.0\nHourly rate: $18.0\nOvertime hours: 10.0\nNo overtime premium.\nTotal paid: $720\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0015",
+          "document_type": "schedule",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
+          ],
+          "scheduled_hours": 48.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0015\nWorker: Jordan Lee\nEmployer: Bright Deli LLC\nDates: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13\nScheduled hours: 48.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0015",
+          "document_type": "timekeeping",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 50.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 10.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0015\nWorker: Jordan Lee\nEmployer: Bright Deli LLC\nDates worked: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13\nClocked hours: 50.0\nOvertime hours: 10.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0015",
+          "document_type": "worker_complaint",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 50.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 18.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0015\nWorker: Jordan Lee\nEmployer: Bright Deli LLC\nDates worked: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13\nI clocked 50.0 hours at $18.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 90,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $270.00 (+20).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0016",
+      "worker_name": "Ana Rivera",
+      "employer_name": "Metro Cleaners",
+      "dates_worked": [
+        "2026-05-10",
+        "2026-05-11",
+        "2026-05-12",
+        "2026-05-13",
+        "2026-05-14"
+      ],
+      "scheduled_hours": 42.0,
+      "clocked_hours": 44.0,
+      "paid_hours": 42.0,
+      "hourly_rate": 19.0,
+      "overtime_hours": 4.0,
+      "overtime_paid": false,
+      "total_paid": 798.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 76.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 44.0 hours but payroll shows 42.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 4.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "break_deduction_disputed",
+          "description": "Worker says no break was taken, while payroll deducted break time.",
+          "documents": [
+            "worker_complaint",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0016",
+          "document_type": "employer_message",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0016\nWorker: Ana Rivera\nEmployer: Metro Cleaners\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0016",
+          "document_type": "payroll",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 42.0,
+          "hourly_rate": 19.0,
+          "overtime_hours": 4.0,
+          "overtime_paid": false,
+          "total_paid": 798.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0016\nWorker: Ana Rivera\nEmployer: Metro Cleaners\nPaid hours: 42.0\nHourly rate: $19.0\nOvertime hours: 4.0\nNo overtime premium.\nTotal paid: $798\nMeal break deducted: yes\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0016",
+          "document_type": "schedule",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14"
+          ],
+          "scheduled_hours": 42.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0016\nWorker: Ana Rivera\nEmployer: Metro Cleaners\nDates: 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14\nScheduled hours: 42.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0016",
+          "document_type": "timekeeping",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 4.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0016\nWorker: Ana Rivera\nEmployer: Metro Cleaners\nDates worked: 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14\nClocked hours: 44.0\nOvertime hours: 4.0\nBreak deducted: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0016",
+          "document_type": "worker_complaint",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": 42.0,
+          "hourly_rate": 19.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": false,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0016\nWorker: Ana Rivera\nEmployer: Metro Cleaners\nDates worked: 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14\nI clocked 44.0 hours at $19.0/hour. I was paid for 42.0 hours and believe I was underpaid. I was not able to take a break and no break taken. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 83,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $76.00 (+13).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0017",
+      "worker_name": "Malik Johnson",
+      "employer_name": "Northstar Bistro",
+      "dates_worked": [
+        "2026-05-11",
+        "2026-05-12",
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15"
+      ],
+      "scheduled_hours": 44.0,
+      "clocked_hours": 44.0,
+      "paid_hours": 42.0,
+      "hourly_rate": 20.0,
+      "overtime_hours": 4.0,
+      "overtime_paid": false,
+      "total_paid": 840.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 80.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 44.0 hours but payroll shows 42.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 44.0 hours but payroll shows 42.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 4.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0017",
+          "document_type": "employer_message",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0017\nWorker: Malik Johnson\nEmployer: Northstar Bistro\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0017",
+          "document_type": "payroll",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 42.0,
+          "hourly_rate": 20.0,
+          "overtime_hours": 4.0,
+          "overtime_paid": false,
+          "total_paid": 840.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0017\nWorker: Malik Johnson\nEmployer: Northstar Bistro\nPaid hours: 42.0\nHourly rate: $20.0\nOvertime hours: 4.0\nNo overtime premium.\nTotal paid: $840\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0017",
+          "document_type": "schedule",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15"
+          ],
+          "scheduled_hours": 44.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0017\nWorker: Malik Johnson\nEmployer: Northstar Bistro\nDates: 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15\nScheduled hours: 44.0\nShift notes: spread-of-hours issue observed.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0017",
+          "document_type": "timekeeping",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 4.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0017\nWorker: Malik Johnson\nEmployer: Northstar Bistro\nDates worked: 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15\nClocked hours: 44.0\nOvertime hours: 4.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0017",
+          "document_type": "worker_complaint",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": 42.0,
+          "hourly_rate": 20.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0017\nWorker: Malik Johnson\nEmployer: Northstar Bistro\nDates worked: 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15\nI clocked 44.0 hours at $20.0/hour. I was paid for 42.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 83,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $80.00 (+13).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0018",
+      "worker_name": "Priya Shah",
+      "employer_name": "Harbor Grocery",
+      "dates_worked": [
+        "2026-05-12",
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15",
+        "2026-05-16"
+      ],
+      "scheduled_hours": 46.0,
+      "clocked_hours": 46.0,
+      "paid_hours": 44.0,
+      "hourly_rate": 15.0,
+      "overtime_hours": 6.0,
+      "overtime_paid": false,
+      "total_paid": 690.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 45.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 46.0 hours but payroll shows 44.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 46.0 hours but payroll shows 44.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 6.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0018",
+          "document_type": "employer_message",
+          "worker_name": "Priya Shah",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0018\nWorker: Priya Shah\nEmployer: Harbor Grocery\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0018",
+          "document_type": "payroll",
+          "worker_name": "Priya Shah",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 44.0,
+          "hourly_rate": 15.0,
+          "overtime_hours": 6.0,
+          "overtime_paid": false,
+          "total_paid": 690.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0018\nWorker: Priya Shah\nEmployer: Harbor Grocery\nPaid hours: 44.0\nHourly rate: $15.0\nOvertime hours: 6.0\nNo overtime premium.\nTotal paid: $690\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0018",
+          "document_type": "schedule",
+          "worker_name": "Priya Shah",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16"
+          ],
+          "scheduled_hours": 46.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0018\nWorker: Priya Shah\nEmployer: Harbor Grocery\nDates: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16\nScheduled hours: 46.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0018",
+          "document_type": "timekeeping",
+          "worker_name": "Priya Shah",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 6.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0018\nWorker: Priya Shah\nEmployer: Harbor Grocery\nDates worked: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16\nClocked hours: 46.0\nOvertime hours: 6.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0018",
+          "document_type": "worker_complaint",
+          "worker_name": "Priya Shah",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-12",
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": 44.0,
+          "hourly_rate": 15.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0018\nWorker: Priya Shah\nEmployer: Harbor Grocery\nDates worked: 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16\nI clocked 46.0 hours at $15.0/hour. I was paid for 44.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 81,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $45.00 (+11).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0019",
+      "worker_name": "Diego Torres",
+      "employer_name": "Summit Home Care",
+      "dates_worked": [
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15",
+        "2026-05-16",
+        "2026-05-17"
+      ],
+      "scheduled_hours": 48.0,
+      "clocked_hours": 48.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 16.0,
+      "overtime_hours": 8.0,
+      "overtime_paid": false,
+      "total_paid": 640.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 192.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 48.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 48.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 8.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0019",
+          "document_type": "employer_message",
+          "worker_name": "Diego Torres",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0019\nWorker: Diego Torres\nEmployer: Summit Home Care\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0019",
+          "document_type": "payroll",
+          "worker_name": "Diego Torres",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": 8.0,
+          "overtime_paid": false,
+          "total_paid": 640.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0019\nWorker: Diego Torres\nEmployer: Summit Home Care\nPaid hours: 40.0\nHourly rate: $16.0\nOvertime hours: 8.0\nNo overtime premium.\nTotal paid: $640\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0019",
+          "document_type": "schedule",
+          "worker_name": "Diego Torres",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16",
+            "2026-05-17"
+          ],
+          "scheduled_hours": 48.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0019\nWorker: Diego Torres\nEmployer: Summit Home Care\nDates: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, 2026-05-17\nScheduled hours: 48.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0019",
+          "document_type": "timekeeping",
+          "worker_name": "Diego Torres",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16",
+            "2026-05-17"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 8.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0019\nWorker: Diego Torres\nEmployer: Summit Home Care\nDates worked: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, 2026-05-17\nClocked hours: 48.0\nOvertime hours: 8.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0019",
+          "document_type": "worker_complaint",
+          "worker_name": "Diego Torres",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-13",
+            "2026-05-14",
+            "2026-05-15",
+            "2026-05-16",
+            "2026-05-17"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0019\nWorker: Diego Torres\nEmployer: Summit Home Care\nDates worked: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, 2026-05-17\nI clocked 48.0 hours at $16.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 87,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $192.00 (+17).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0020",
+      "worker_name": "Mei Chen",
+      "employer_name": "Bright Deli LLC",
+      "dates_worked": [
+        "2026-05-04",
+        "2026-05-05",
+        "2026-05-06",
+        "2026-05-07",
+        "2026-05-08"
+      ],
+      "scheduled_hours": 42.0,
+      "clocked_hours": 44.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 17.0,
+      "overtime_hours": 4.0,
+      "overtime_paid": false,
+      "total_paid": 680.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 102.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 44.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 42.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 4.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0020",
+          "document_type": "employer_message",
+          "worker_name": "Mei Chen",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0020\nWorker: Mei Chen\nEmployer: Bright Deli LLC\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0020",
+          "document_type": "payroll",
+          "worker_name": "Mei Chen",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 17.0,
+          "overtime_hours": 4.0,
+          "overtime_paid": false,
+          "total_paid": 680.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0020\nWorker: Mei Chen\nEmployer: Bright Deli LLC\nPaid hours: 40.0\nHourly rate: $17.0\nOvertime hours: 4.0\nNo overtime premium.\nTotal paid: $680\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0020",
+          "document_type": "schedule",
+          "worker_name": "Mei Chen",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-04",
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08"
+          ],
+          "scheduled_hours": 42.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0020\nWorker: Mei Chen\nEmployer: Bright Deli LLC\nDates: 2026-05-04, 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08\nScheduled hours: 42.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0020",
+          "document_type": "timekeeping",
+          "worker_name": "Mei Chen",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-04",
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 4.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0020\nWorker: Mei Chen\nEmployer: Bright Deli LLC\nDates worked: 2026-05-04, 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08\nClocked hours: 44.0\nOvertime hours: 4.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0020",
+          "document_type": "worker_complaint",
+          "worker_name": "Mei Chen",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-04",
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 44.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 17.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0020\nWorker: Mei Chen\nEmployer: Bright Deli LLC\nDates worked: 2026-05-04, 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08\nI clocked 44.0 hours at $17.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 84,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $102.00 (+14).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0021",
+      "worker_name": "Sam Patel",
+      "employer_name": "Metro Cleaners",
+      "dates_worked": [
+        "2026-05-05",
+        "2026-05-06",
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09"
+      ],
+      "scheduled_hours": 44.0,
+      "clocked_hours": 46.0,
+      "paid_hours": 44.0,
+      "hourly_rate": 18.0,
+      "overtime_hours": 6.0,
+      "overtime_paid": false,
+      "total_paid": 792.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 90.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 46.0 hours but payroll shows 44.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 6.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "break_deduction_disputed",
+          "description": "Worker says no break was taken, while payroll deducted break time.",
+          "documents": [
+            "worker_complaint",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0021",
+          "document_type": "employer_message",
+          "worker_name": "Sam Patel",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0021\nWorker: Sam Patel\nEmployer: Metro Cleaners\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0021",
+          "document_type": "payroll",
+          "worker_name": "Sam Patel",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 44.0,
+          "hourly_rate": 18.0,
+          "overtime_hours": 6.0,
+          "overtime_paid": false,
+          "total_paid": 792.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0021\nWorker: Sam Patel\nEmployer: Metro Cleaners\nPaid hours: 44.0\nHourly rate: $18.0\nOvertime hours: 6.0\nNo overtime premium.\nTotal paid: $792\nMeal break deducted: yes\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0021",
+          "document_type": "schedule",
+          "worker_name": "Sam Patel",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09"
+          ],
+          "scheduled_hours": 44.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0021\nWorker: Sam Patel\nEmployer: Metro Cleaners\nDates: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nScheduled hours: 44.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0021",
+          "document_type": "timekeeping",
+          "worker_name": "Sam Patel",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 6.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0021\nWorker: Sam Patel\nEmployer: Metro Cleaners\nDates worked: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nClocked hours: 46.0\nOvertime hours: 6.0\nBreak deducted: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0021",
+          "document_type": "worker_complaint",
+          "worker_name": "Sam Patel",
+          "employer_name": "Metro Cleaners",
+          "dates_worked": [
+            "2026-05-05",
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": 44.0,
+          "hourly_rate": 18.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": false,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0021\nWorker: Sam Patel\nEmployer: Metro Cleaners\nDates worked: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nI clocked 46.0 hours at $18.0/hour. I was paid for 44.0 hours and believe I was underpaid. I was not able to take a break and no break taken. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 83,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $90.00 (+13).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0022",
+      "worker_name": "Rosa Kim",
+      "employer_name": "Northstar Bistro",
+      "dates_worked": [
+        "2026-05-06",
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10"
+      ],
+      "scheduled_hours": 46.0,
+      "clocked_hours": 46.0,
+      "paid_hours": 44.0,
+      "hourly_rate": 19.0,
+      "overtime_hours": 6.0,
+      "overtime_paid": false,
+      "total_paid": 836.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 95.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 46.0 hours but payroll shows 44.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 46.0 hours but payroll shows 44.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 6.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0022",
+          "document_type": "employer_message",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0022\nWorker: Rosa Kim\nEmployer: Northstar Bistro\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0022",
+          "document_type": "payroll",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 44.0,
+          "hourly_rate": 19.0,
+          "overtime_hours": 6.0,
+          "overtime_paid": false,
+          "total_paid": 836.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0022\nWorker: Rosa Kim\nEmployer: Northstar Bistro\nPaid hours: 44.0\nHourly rate: $19.0\nOvertime hours: 6.0\nNo overtime premium.\nTotal paid: $836\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0022",
+          "document_type": "schedule",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10"
+          ],
+          "scheduled_hours": 46.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0022\nWorker: Rosa Kim\nEmployer: Northstar Bistro\nDates: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10\nScheduled hours: 46.0\nShift notes: spread-of-hours issue observed.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0022",
+          "document_type": "timekeeping",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 6.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0022\nWorker: Rosa Kim\nEmployer: Northstar Bistro\nDates worked: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10\nClocked hours: 46.0\nOvertime hours: 6.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0022",
+          "document_type": "worker_complaint",
+          "worker_name": "Rosa Kim",
+          "employer_name": "Northstar Bistro",
+          "dates_worked": [
+            "2026-05-06",
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": 44.0,
+          "hourly_rate": 19.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0022\nWorker: Rosa Kim\nEmployer: Northstar Bistro\nDates worked: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10\nI clocked 46.0 hours at $19.0/hour. I was paid for 44.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 83,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $95.00 (+13).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0023",
+      "worker_name": "Jordan Lee",
+      "employer_name": "Harbor Grocery",
+      "dates_worked": [
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11"
+      ],
+      "scheduled_hours": 48.0,
+      "clocked_hours": 48.0,
+      "paid_hours": 46.0,
+      "hourly_rate": 20.0,
+      "overtime_hours": 8.0,
+      "overtime_paid": false,
+      "total_paid": 960.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 80.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 48.0 hours but payroll shows 46.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 48.0 hours but payroll shows 46.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 8.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0023",
+          "document_type": "employer_message",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0023\nWorker: Jordan Lee\nEmployer: Harbor Grocery\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0023",
+          "document_type": "payroll",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 46.0,
+          "hourly_rate": 20.0,
+          "overtime_hours": 8.0,
+          "overtime_paid": false,
+          "total_paid": 960.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0023\nWorker: Jordan Lee\nEmployer: Harbor Grocery\nPaid hours: 46.0\nHourly rate: $20.0\nOvertime hours: 8.0\nNo overtime premium.\nTotal paid: $960\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0023",
+          "document_type": "schedule",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11"
+          ],
+          "scheduled_hours": 48.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0023\nWorker: Jordan Lee\nEmployer: Harbor Grocery\nDates: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11\nScheduled hours: 48.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0023",
+          "document_type": "timekeeping",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 8.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0023\nWorker: Jordan Lee\nEmployer: Harbor Grocery\nDates worked: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11\nClocked hours: 48.0\nOvertime hours: 8.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0023",
+          "document_type": "worker_complaint",
+          "worker_name": "Jordan Lee",
+          "employer_name": "Harbor Grocery",
+          "dates_worked": [
+            "2026-05-07",
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 48.0,
+          "paid_hours": 46.0,
+          "hourly_rate": 20.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0023\nWorker: Jordan Lee\nEmployer: Harbor Grocery\nDates worked: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11\nI clocked 48.0 hours at $20.0/hour. I was paid for 46.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 83,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $80.00 (+13).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0024",
+      "worker_name": "Ana Rivera",
+      "employer_name": "Summit Home Care",
+      "dates_worked": [
+        "2026-05-08",
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11",
+        "2026-05-12"
+      ],
+      "scheduled_hours": 42.0,
+      "clocked_hours": 42.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 15.0,
+      "overtime_hours": 2.0,
+      "overtime_paid": false,
+      "total_paid": 600.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 45.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 42.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 42.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 2.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "premium_record_conflict",
+          "description": "Employer message says a premium was not paid, while payroll marks premium paid.",
+          "documents": [
+            "employer_message",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0024",
+          "document_type": "employer_message",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0024\nWorker: Ana Rivera\nEmployer: Summit Home Care\nManager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0024",
+          "document_type": "payroll",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 15.0,
+          "overtime_hours": 2.0,
+          "overtime_paid": false,
+          "total_paid": 600.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0024\nWorker: Ana Rivera\nEmployer: Summit Home Care\nPaid hours: 40.0\nHourly rate: $15.0\nOvertime hours: 2.0\nNo overtime premium.\nTotal paid: $600\nMeal break deducted: no\nPremium paid: yes\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0024",
+          "document_type": "schedule",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12"
+          ],
+          "scheduled_hours": 42.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0024\nWorker: Ana Rivera\nEmployer: Summit Home Care\nDates: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12\nScheduled hours: 42.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0024",
+          "document_type": "timekeeping",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 42.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 2.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0024\nWorker: Ana Rivera\nEmployer: Summit Home Care\nDates worked: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12\nClocked hours: 42.0\nOvertime hours: 2.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0024",
+          "document_type": "worker_complaint",
+          "worker_name": "Ana Rivera",
+          "employer_name": "Summit Home Care",
+          "dates_worked": [
+            "2026-05-08",
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 42.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 15.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0024\nWorker: Ana Rivera\nEmployer: Summit Home Care\nDates worked: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12\nI clocked 42.0 hours at $15.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 81,
+      "severity": "high",
+      "reasons": [
+        "4 contradiction(s) detected (+45).",
+        "Estimated underpayment is $45.00 (+11).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  },
+  {
+    "case_facts": {
+      "case_id": "LSI-0025",
+      "worker_name": "Malik Johnson",
+      "employer_name": "Bright Deli LLC",
+      "dates_worked": [
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11",
+        "2026-05-12",
+        "2026-05-13"
+      ],
+      "scheduled_hours": 44.0,
+      "clocked_hours": 46.0,
+      "paid_hours": 40.0,
+      "hourly_rate": 16.0,
+      "overtime_hours": 6.0,
+      "overtime_paid": false,
+      "total_paid": 640.0,
+      "likely_violation": true,
+      "violation_types": [
+        "overtime",
+        "spread_of_hours",
+        "underpayment",
+        "unpaid_break"
+      ],
+      "estimated_underpayment": 144.0,
+      "contradictions": [
+        {
+          "contradiction_type": "clocked_vs_paid_hours",
+          "description": "Timekeeping shows 46.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "scheduled_vs_paid_hours",
+          "description": "Schedule shows 44.0 hours but payroll shows 40.0 paid hours.",
+          "documents": [
+            "schedule",
+            "payroll"
+          ],
+          "severity": "medium",
+          "confidence": 0.8
+        },
+        {
+          "contradiction_type": "overtime_premium_missing",
+          "description": "The case has 6.0 overtime hours and payroll indicates no overtime premium.",
+          "documents": [
+            "timekeeping",
+            "payroll"
+          ],
+          "severity": "high",
+          "confidence": 0.8
+        }
+      ],
+      "missing_fields": [],
+      "confidence": 0.86,
+      "evidence_by_document": {
+        "employer_message": {
+          "case_id": "LSI-0025",
+          "document_type": "employer_message",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0025\nWorker: Malik Johnson\nEmployer: Bright Deli LLC\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+          },
+          "confidence": 0.86
+        },
+        "payroll": {
+          "case_id": "LSI-0025",
+          "document_type": "payroll",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [],
+          "scheduled_hours": null,
+          "clocked_hours": null,
+          "paid_hours": 40.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": 6.0,
+          "overtime_paid": false,
+          "total_paid": 640.0,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": true,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0025\nWorker: Malik Johnson\nEmployer: Bright Deli LLC\nPaid hours: 40.0\nHourly rate: $16.0\nOvertime hours: 6.0\nNo overtime premium.\nTotal paid: $640\nMeal break deducted: no\nPremium paid: no\n"
+          },
+          "confidence": 0.86
+        },
+        "schedule": {
+          "case_id": "LSI-0025",
+          "document_type": "schedule",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
+          ],
+          "scheduled_hours": 44.0,
+          "clocked_hours": null,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": null,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": null,
+          "spread_of_hours": true,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "spread_of_hours"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0025\nWorker: Malik Johnson\nEmployer: Bright Deli LLC\nDates: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13\nScheduled hours: 44.0\nShift notes: spread-of-hours issue not central.\n"
+          },
+          "confidence": 0.86
+        },
+        "timekeeping": {
+          "case_id": "LSI-0025",
+          "document_type": "timekeeping",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": null,
+          "hourly_rate": null,
+          "overtime_hours": 6.0,
+          "overtime_paid": null,
+          "total_paid": null,
+          "break_deducted": true,
+          "break_taken": null,
+          "spread_of_hours": null,
+          "premium_paid": null,
+          "claimed_violation_types": [
+            "overtime",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0025\nWorker: Malik Johnson\nEmployer: Bright Deli LLC\nDates worked: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13\nClocked hours: 46.0\nOvertime hours: 6.0\nBreak deducted: no\n"
+          },
+          "confidence": 0.86
+        },
+        "worker_complaint": {
+          "case_id": "LSI-0025",
+          "document_type": "worker_complaint",
+          "worker_name": "Malik Johnson",
+          "employer_name": "Bright Deli LLC",
+          "dates_worked": [
+            "2026-05-09",
+            "2026-05-10",
+            "2026-05-11",
+            "2026-05-12",
+            "2026-05-13"
+          ],
+          "scheduled_hours": null,
+          "clocked_hours": 46.0,
+          "paid_hours": 40.0,
+          "hourly_rate": 16.0,
+          "overtime_hours": null,
+          "overtime_paid": false,
+          "total_paid": null,
+          "break_deducted": null,
+          "break_taken": true,
+          "spread_of_hours": null,
+          "premium_paid": false,
+          "claimed_violation_types": [
+            "overtime",
+            "underpayment",
+            "unpaid_break"
+          ],
+          "raw_evidence": {
+            "excerpt": "Case ID: LSI-0025\nWorker: Malik Johnson\nEmployer: Bright Deli LLC\nDates worked: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13\nI clocked 46.0 hours at $16.0/hour. I was paid for 40.0 hours and believe I was underpaid. Meal break taken on most days. Overtime premium not paid.\n"
+          },
+          "confidence": 0.86
+        }
+      }
+    },
+    "risk_score": {
+      "risk_score": 85,
+      "severity": "high",
+      "reasons": [
+        "3 contradiction(s) detected (+45).",
+        "Estimated underpayment is $144.00 (+15).",
+        "Overtime issue present (+15)."
+      ],
+      "human_review_flag": true
+    }
+  }
+]

@@ -1,0 +1,10 @@
+Case ID: LSI-0003
+Worker: Diego Torres
+Employer: Harbor Grocery
+Paid hours: 46.0
+Hourly rate: $18.0
+Overtime hours: 8.0
+No overtime premium.
+Total paid: $864
+Meal break deducted: no
+Premium paid: yes

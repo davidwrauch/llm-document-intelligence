@@ -1,0 +1,25 @@
+{
+  "case_id": "LSI-0005",
+  "worker_name": "Sam Patel",
+  "employer_name": "Bright Deli LLC",
+  "dates_worked": [
+    "2026-05-09",
+    "2026-05-10",
+    "2026-05-11",
+    "2026-05-12",
+    "2026-05-13"
+  ],
+  "scheduled_hours": 44.0,
+  "clocked_hours": 46.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 20.0,
+  "overtime_hours": 6.0,
+  "total_paid": 800,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 180.0,
+  "contradiction_expected": true
+}

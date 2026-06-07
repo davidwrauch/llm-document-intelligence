@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0003",
+  "worker_name": "Diego Torres",
+  "employer_name": "Harbor Grocery",
+  "dates_worked": [
+    "2026-05-07",
+    "2026-05-08",
+    "2026-05-09",
+    "2026-05-10",
+    "2026-05-11"
+  ],
+  "scheduled_hours": 48.0,
+  "clocked_hours": 48.0,
+  "paid_hours": 46.0,
+  "hourly_rate": 18.0,
+  "overtime_hours": 8.0,
+  "total_paid": 864,
+  "likely_violation": true,
+  "violation_types": [
+    "missing_premium",
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 72.0,
+  "contradiction_expected": true
+}

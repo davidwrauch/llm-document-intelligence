@@ -1,0 +1,6 @@
+Case ID: LSI-0003
+Worker: Diego Torres
+Employer: Harbor Grocery
+Dates: 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11
+Scheduled hours: 48.0
+Shift notes: spread-of-hours issue not central.

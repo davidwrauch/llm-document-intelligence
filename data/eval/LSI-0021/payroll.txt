@@ -1,0 +1,10 @@
+Case ID: LSI-0021
+Worker: Sam Patel
+Employer: Metro Cleaners
+Paid hours: 44.0
+Hourly rate: $18.0
+Overtime hours: 6.0
+No overtime premium.
+Total paid: $792
+Meal break deducted: yes
+Premium paid: no

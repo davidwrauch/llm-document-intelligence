@@ -1,0 +1,10 @@
+Case ID: LSI-0005
+Worker: Sam Patel
+Employer: Bright Deli LLC
+Paid hours: 40.0
+Hourly rate: $20.0
+Overtime hours: 6.0
+No overtime premium.
+Total paid: $800
+Meal break deducted: no
+Premium paid: no

@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0001",
+  "worker_name": "Malik Johnson",
+  "employer_name": "Metro Cleaners",
+  "dates_worked": [
+    "2026-05-05",
+    "2026-05-06",
+    "2026-05-07",
+    "2026-05-08",
+    "2026-05-09"
+  ],
+  "scheduled_hours": 44.0,
+  "clocked_hours": 46.0,
+  "paid_hours": 44.0,
+  "hourly_rate": 16.0,
+  "overtime_hours": 6.0,
+  "total_paid": 704,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "underpayment",
+    "unpaid_break"
+  ],
+  "estimated_underpayment": 80.0,
+  "contradiction_expected": true
+}

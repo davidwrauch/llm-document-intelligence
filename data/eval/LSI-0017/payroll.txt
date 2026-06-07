@@ -1,0 +1,10 @@
+Case ID: LSI-0017
+Worker: Malik Johnson
+Employer: Northstar Bistro
+Paid hours: 42.0
+Hourly rate: $20.0
+Overtime hours: 4.0
+No overtime premium.
+Total paid: $840
+Meal break deducted: no
+Premium paid: no

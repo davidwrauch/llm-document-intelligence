@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0014",
+  "worker_name": "Rosa Kim",
+  "employer_name": "Summit Home Care",
+  "dates_worked": [
+    "2026-05-08",
+    "2026-05-09",
+    "2026-05-10",
+    "2026-05-11",
+    "2026-05-12"
+  ],
+  "scheduled_hours": 46.0,
+  "clocked_hours": 46.0,
+  "paid_hours": 40.0,
+  "hourly_rate": 17.0,
+  "overtime_hours": 6.0,
+  "total_paid": 680,
+  "likely_violation": true,
+  "violation_types": [
+    "employer_conflict",
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 153.0,
+  "contradiction_expected": true
+}

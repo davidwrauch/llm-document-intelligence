@@ -1,0 +1,242 @@
+{
+  "case_facts": {
+    "case_id": "LSI-0001",
+    "worker_name": "Malik Johnson",
+    "employer_name": "Metro Cleaners",
+    "dates_worked": [
+      "2026-05-05",
+      "2026-05-06",
+      "2026-05-07",
+      "2026-05-08",
+      "2026-05-09"
+    ],
+    "scheduled_hours": 44.0,
+    "clocked_hours": 46.0,
+    "paid_hours": 40.0,
+    "hourly_rate": 16.0,
+    "overtime_hours": 6.0,
+    "overtime_paid": false,
+    "total_paid": 704.0,
+    "likely_violation": true,
+    "violation_types": [
+      "break_denial",
+      "no_overtime_premium_paid",
+      "overtime",
+      "overtime_premium_not_paid",
+      "potential_overtime_non-compliance",
+      "unauthorized_schedule_changes",
+      "underpayment",
+      "unpaid_break",
+      "wage_underpayment"
+    ],
+    "estimated_underpayment": 80.0,
+    "contradictions": [
+      {
+        "contradiction_type": "clocked_vs_paid_hours",
+        "description": "Timekeeping shows 46.0 hours but payroll shows 40.0 paid hours.",
+        "documents": [
+          "timekeeping",
+          "payroll"
+        ],
+        "severity": "high",
+        "confidence": 0.8
+      },
+      {
+        "contradiction_type": "scheduled_vs_paid_hours",
+        "description": "Schedule shows 44.0 hours but payroll shows 40.0 paid hours.",
+        "documents": [
+          "schedule",
+          "payroll"
+        ],
+        "severity": "medium",
+        "confidence": 0.8
+      },
+      {
+        "contradiction_type": "overtime_premium_missing",
+        "description": "The case has 6.0 overtime hours and payroll indicates no overtime premium.",
+        "documents": [
+          "timekeeping",
+          "payroll"
+        ],
+        "severity": "high",
+        "confidence": 0.8
+      },
+      {
+        "contradiction_type": "break_deduction_disputed",
+        "description": "Worker says no break was taken, while payroll deducted break time.",
+        "documents": [
+          "worker_complaint",
+          "payroll"
+        ],
+        "severity": "medium",
+        "confidence": 0.8
+      }
+    ],
+    "missing_fields": [],
+    "confidence": 0.87,
+    "evidence_by_document": {
+      "employer_message": {
+        "case_id": "LSI-0001",
+        "document_type": "employer_message",
+        "worker_name": "Malik Johnson",
+        "employer_name": "Metro Cleaners",
+        "dates_worked": [],
+        "scheduled_hours": null,
+        "clocked_hours": null,
+        "paid_hours": 40.0,
+        "hourly_rate": null,
+        "overtime_hours": null,
+        "overtime_paid": false,
+        "total_paid": null,
+        "break_deducted": null,
+        "break_taken": null,
+        "spread_of_hours": null,
+        "premium_paid": false,
+        "claimed_violation_types": [
+          "potential_overtime_non-compliance",
+          "unauthorized_schedule_changes"
+        ],
+        "raw_evidence": {
+          "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nManager message: Payroll only approved 40 regular hours. No separate premium was authorized. Please keep schedule changes informal.\n"
+        },
+        "confidence": 0.65
+      },
+      "payroll": {
+        "case_id": "LSI-0001",
+        "document_type": "payroll",
+        "worker_name": "Malik Johnson",
+        "employer_name": "Metro Cleaners",
+        "dates_worked": [],
+        "scheduled_hours": null,
+        "clocked_hours": null,
+        "paid_hours": 44.0,
+        "hourly_rate": 16.0,
+        "overtime_hours": 6.0,
+        "overtime_paid": false,
+        "total_paid": 704.0,
+        "break_deducted": true,
+        "break_taken": null,
+        "spread_of_hours": null,
+        "premium_paid": false,
+        "claimed_violation_types": [
+          "no_overtime_premium_paid"
+        ],
+        "raw_evidence": {
+          "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nPaid hours: 44.0\nHourly rate: $16.0\nOvertime hours: 6.0\nNo overtime premium.\nTotal paid: $704\nMeal break deducted: yes\nPremium paid: no\n"
+        },
+        "confidence": 0.95
+      },
+      "schedule": {
+        "case_id": "LSI-0001",
+        "document_type": "schedule",
+        "worker_name": "Malik Johnson",
+        "employer_name": "Metro Cleaners",
+        "dates_worked": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09"
+        ],
+        "scheduled_hours": 44.0,
+        "clocked_hours": null,
+        "paid_hours": null,
+        "hourly_rate": null,
+        "overtime_hours": null,
+        "overtime_paid": null,
+        "total_paid": null,
+        "break_deducted": null,
+        "break_taken": null,
+        "spread_of_hours": true,
+        "premium_paid": null,
+        "claimed_violation_types": [],
+        "raw_evidence": {
+          "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nDates: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nScheduled hours: 44.0\nShift notes: spread-of-hours issue not central.\n"
+        },
+        "confidence": 0.85
+      },
+      "timekeeping": {
+        "case_id": "LSI-0001",
+        "document_type": "timekeeping",
+        "worker_name": "Malik Johnson",
+        "employer_name": "Metro Cleaners",
+        "dates_worked": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09"
+        ],
+        "scheduled_hours": null,
+        "clocked_hours": 46.0,
+        "paid_hours": null,
+        "hourly_rate": null,
+        "overtime_hours": 6.0,
+        "overtime_paid": null,
+        "total_paid": null,
+        "break_deducted": true,
+        "break_taken": null,
+        "spread_of_hours": null,
+        "premium_paid": null,
+        "claimed_violation_types": [],
+        "raw_evidence": {
+          "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nDates worked: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nClocked hours: 46.0\nOvertime hours: 6.0\nBreak deducted: yes\n"
+        },
+        "confidence": 0.95
+      },
+      "worker_complaint": {
+        "case_id": "LSI-0001",
+        "document_type": "worker_complaint",
+        "worker_name": "Malik Johnson",
+        "employer_name": "Metro Cleaners",
+        "dates_worked": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09"
+        ],
+        "scheduled_hours": null,
+        "clocked_hours": 46.0,
+        "paid_hours": 44.0,
+        "hourly_rate": 16.0,
+        "overtime_hours": 6.0,
+        "overtime_paid": false,
+        "total_paid": 704.0,
+        "break_deducted": false,
+        "break_taken": false,
+        "spread_of_hours": null,
+        "premium_paid": false,
+        "claimed_violation_types": [
+          "break_denial",
+          "overtime_premium_not_paid",
+          "wage_underpayment"
+        ],
+        "raw_evidence": {
+          "excerpt": "Case ID: LSI-0001\nWorker: Malik Johnson\nEmployer: Metro Cleaners\nDates worked: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\nI clocked 46.0 hours at $16.0/hour. I was paid for 44.0 hours and believe I was underpaid. I was not able to take a break and no break taken. Overtime premium not paid.\n"
+        },
+        "confidence": 0.95
+      }
+    }
+  },
+  "risk_score": {
+    "risk_score": 83,
+    "severity": "high",
+    "reasons": [
+      "4 contradiction(s) detected (+45).",
+      "Estimated underpayment is $80.00 (+13).",
+      "Overtime issue present (+15)."
+    ],
+    "human_review_flag": true
+  },
+  "summary": {
+    "case_id": "LSI-0001",
+    "markdown": "# Investigator Summary: LSI-0001\n\n## Case overview\n- Worker: Malik Johnson\n- Employer: Metro Cleaners\n- Dates worked: 2026-05-05, 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09\n- Scheduled / clocked / paid hours: 44.0 / 46.0 / 40.0\n- Estimated underpayment: $80.00\n\n## Likely violations\nbreak_denial, no_overtime_premium_paid, overtime, overtime_premium_not_paid, potential_overtime_non-compliance, unauthorized_schedule_changes, underpayment, unpaid_break, wage_underpayment\n\n## Evidence by document\n- **employer_message**: paid_hours=40.0\n- **payroll**: paid_hours=44.0, total_paid=704.0\n- **schedule**: scheduled_hours=44.0\n- **timekeeping**: clocked_hours=46.0\n- **worker_complaint**: clocked_hours=46.0, paid_hours=44.0, total_paid=704.0\n\n## Contradictions\n- **clocked_vs_paid_hours** (high): Timekeeping shows 46.0 hours but payroll shows 40.0 paid hours.\n- **scheduled_vs_paid_hours** (medium): Schedule shows 44.0 hours but payroll shows 40.0 paid hours.\n- **overtime_premium_missing** (high): The case has 6.0 overtime hours and payroll indicates no overtime premium.\n- **break_deduction_disputed** (medium): Worker says no break was taken, while payroll deducted break time.\n\n## Risk score\n- Score: 83/100\n- Severity: high\n- Reasons: 4 contradiction(s) detected (+45).; Estimated underpayment is $80.00 (+13).; Overtime issue present (+15).\n\n## Recommended follow-up questions\n- Ask the employer for complete payroll registers and time records for the relevant week.\n- Confirm whether meal breaks were actually taken and documented contemporaneously.\n- Verify whether any overtime or spread-of-hours premiums were paid separately.\n\n## Human review flag\nTrue\n",
+    "human_review_flag": true,
+    "recommended_follow_up_questions": [
+      "Ask the employer for complete payroll registers and time records for the relevant week.",
+      "Confirm whether meal breaks were actually taken and documented contemporaneously.",
+      "Verify whether any overtime or spread-of-hours premiums were paid separately."
+    ]
+  }
+}

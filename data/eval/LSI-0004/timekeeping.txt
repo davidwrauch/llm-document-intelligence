@@ -1,0 +1,7 @@
+Case ID: LSI-0004
+Worker: Mei Chen
+Employer: Summit Home Care
+Dates worked: 2026-05-08, 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12
+Clocked hours: 42.0
+Overtime hours: 2.0
+Break deducted: no

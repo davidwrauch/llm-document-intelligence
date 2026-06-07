@@ -1,0 +1,10 @@
+Case ID: LSI-0006
+Worker: Rosa Kim
+Employer: Metro Cleaners
+Paid hours: 46.0
+Hourly rate: $15.0
+Overtime hours: 8.0
+No overtime premium.
+Total paid: $690
+Meal break deducted: yes
+Premium paid: no

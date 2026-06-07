@@ -1,0 +1,7 @@
+Case ID: LSI-0015
+Worker: Jordan Lee
+Employer: Bright Deli LLC
+Dates worked: 2026-05-09, 2026-05-10, 2026-05-11, 2026-05-12, 2026-05-13
+Clocked hours: 50.0
+Overtime hours: 10.0
+Break deducted: no

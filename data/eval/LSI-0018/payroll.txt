@@ -1,0 +1,10 @@
+Case ID: LSI-0018
+Worker: Priya Shah
+Employer: Harbor Grocery
+Paid hours: 44.0
+Hourly rate: $15.0
+Overtime hours: 6.0
+No overtime premium.
+Total paid: $690
+Meal break deducted: no
+Premium paid: yes

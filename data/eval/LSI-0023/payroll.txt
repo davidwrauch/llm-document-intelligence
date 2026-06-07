@@ -1,0 +1,10 @@
+Case ID: LSI-0023
+Worker: Jordan Lee
+Employer: Harbor Grocery
+Paid hours: 46.0
+Hourly rate: $20.0
+Overtime hours: 8.0
+No overtime premium.
+Total paid: $960
+Meal break deducted: no
+Premium paid: yes

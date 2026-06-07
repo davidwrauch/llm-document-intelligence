@@ -1,0 +1,10 @@
+Case ID: LSI-0024
+Worker: Ana Rivera
+Employer: Summit Home Care
+Paid hours: 40.0
+Hourly rate: $15.0
+Overtime hours: 2.0
+No overtime premium.
+Total paid: $600
+Meal break deducted: no
+Premium paid: yes

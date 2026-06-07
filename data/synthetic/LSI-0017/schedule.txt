@@ -1,0 +1,6 @@
+Case ID: LSI-0017
+Worker: Malik Johnson
+Employer: Northstar Bistro
+Dates: 2026-05-11, 2026-05-12, 2026-05-13, 2026-05-14, 2026-05-15
+Scheduled hours: 44.0
+Shift notes: spread-of-hours issue observed.

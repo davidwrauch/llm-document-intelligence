@@ -1,0 +1,10 @@
+Case ID: LSI-0011
+Worker: Diego Torres
+Employer: Metro Cleaners
+Paid hours: 48.0
+Hourly rate: $20.0
+Overtime hours: 10.0
+No overtime premium.
+Total paid: $960
+Meal break deducted: yes
+Premium paid: no

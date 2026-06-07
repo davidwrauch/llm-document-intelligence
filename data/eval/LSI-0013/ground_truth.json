@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0013",
+  "worker_name": "Sam Patel",
+  "employer_name": "Harbor Grocery",
+  "dates_worked": [
+    "2026-05-07",
+    "2026-05-08",
+    "2026-05-09",
+    "2026-05-10",
+    "2026-05-11"
+  ],
+  "scheduled_hours": 44.0,
+  "clocked_hours": 44.0,
+  "paid_hours": 42.0,
+  "hourly_rate": 16.0,
+  "overtime_hours": 4.0,
+  "total_paid": 704,
+  "likely_violation": true,
+  "violation_types": [
+    "missing_premium",
+    "overtime",
+    "underpayment"
+  ],
+  "estimated_underpayment": 32.0,
+  "contradiction_expected": true
+}

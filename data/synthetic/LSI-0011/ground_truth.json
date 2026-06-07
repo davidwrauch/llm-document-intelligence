@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0011",
+  "worker_name": "Diego Torres",
+  "employer_name": "Metro Cleaners",
+  "dates_worked": [
+    "2026-05-05",
+    "2026-05-06",
+    "2026-05-07",
+    "2026-05-08",
+    "2026-05-09"
+  ],
+  "scheduled_hours": 48.0,
+  "clocked_hours": 50.0,
+  "paid_hours": 48.0,
+  "hourly_rate": 20.0,
+  "overtime_hours": 10.0,
+  "total_paid": 960,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "underpayment",
+    "unpaid_break"
+  ],
+  "estimated_underpayment": 140.0,
+  "contradiction_expected": true
+}

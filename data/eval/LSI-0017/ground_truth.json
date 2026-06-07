@@ -1,0 +1,26 @@
+{
+  "case_id": "LSI-0017",
+  "worker_name": "Malik Johnson",
+  "employer_name": "Northstar Bistro",
+  "dates_worked": [
+    "2026-05-11",
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14",
+    "2026-05-15"
+  ],
+  "scheduled_hours": 44.0,
+  "clocked_hours": 44.0,
+  "paid_hours": 42.0,
+  "hourly_rate": 20.0,
+  "overtime_hours": 4.0,
+  "total_paid": 840,
+  "likely_violation": true,
+  "violation_types": [
+    "overtime",
+    "spread_of_hours",
+    "underpayment"
+  ],
+  "estimated_underpayment": 80.0,
+  "contradiction_expected": true
+}

@@ -1,0 +1,4 @@
+Case ID: LSI-0013
+Worker: Sam Patel
+Employer: Harbor Grocery
+Manager message: Payroll only approved 40 regular hours. Premium not paid due to system issue. Please keep schedule changes informal.

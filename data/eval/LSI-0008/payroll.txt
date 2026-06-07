@@ -1,0 +1,10 @@
+Case ID: LSI-0008
+Worker: Ana Rivera
+Employer: Harbor Grocery
+Paid hours: 40.0
+Hourly rate: $17.0
+Overtime hours: 2.0
+No overtime premium.
+Total paid: $714
+Meal break deducted: no
+Premium paid: yes

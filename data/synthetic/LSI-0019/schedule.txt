@@ -1,0 +1,6 @@
+Case ID: LSI-0019
+Worker: Diego Torres
+Employer: Summit Home Care
+Dates: 2026-05-13, 2026-05-14, 2026-05-15, 2026-05-16, 2026-05-17
+Scheduled hours: 48.0
+Shift notes: spread-of-hours issue not central.

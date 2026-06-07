@@ -1,0 +1,10 @@
+Case ID: LSI-0013
+Worker: Sam Patel
+Employer: Harbor Grocery
+Paid hours: 42.0
+Hourly rate: $16.0
+Overtime hours: 4.0
+No overtime premium.
+Total paid: $704
+Meal break deducted: no
+Premium paid: yes

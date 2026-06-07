@@ -1,0 +1,6 @@
+Case ID: LSI-0012
+Worker: Mei Chen
+Employer: Northstar Bistro
+Dates: 2026-05-06, 2026-05-07, 2026-05-08, 2026-05-09, 2026-05-10
+Scheduled hours: 42.0
+Shift notes: spread-of-hours issue observed.
