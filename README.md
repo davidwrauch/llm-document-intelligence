@@ -43,7 +43,7 @@ Recommended: Request full payroll register; confirm break documentation; verify 
 
 | What we measured | Result |
 |---|---|
-| Numeric field extraction (hours, pay rates, totals) | **Perfect — 0.0 MAE across all fields** |
+| Numeric field extraction (hours, pay rates, totals) | **Perfect — 0.0 MAE across all fields** | (this using synthetic data, so this number would never be this high in real life. Next step for this project is to use non-synthetic data.
 | Violation detection recall | **85.7%** — catches most real violations |
 | Violation detection precision | 60.0% — some over-flagging (acceptable for investigative use) |
 | Exact match accuracy | 54.5% |
