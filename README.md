@@ -8,8 +8,6 @@ A working demonstration of AI-powered document intelligence applied to labor sta
 
 Insurance and regulatory workflows are drowning in unstructured documents. This system shows what it looks like when an LLM pipeline actually processes them: ingesting worker complaints, schedules, timekeeping records, payroll data, and employer messages, then surfacing contradictions, flagging violations, and scoring risk — all in a format a human investigator can act on immediately.
 
-This is the same core capability that powers Tailshift's underwriting intelligence: take the mess of real-world documents, find the signal, and deliver it fast.
-
 ---
 
 ## What it does
