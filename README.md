@@ -1,12 +1,12 @@
 # Labor Standards Investigation Intelligence System
 
-A working demonstration of AI-powered document intelligence applied to labor standards investigations — transforming messy, fragmented workplace documents into structured, decision-grade intelligence.
+A working demonstration of AI-powered document intelligence applied to labor standards investigations. We will transform messy, fragmented workplace documents into structured, decision-grade intelligence.
 
 ---
 
 ## What this is
 
-Insurance and regulatory workflows are drowning in unstructured documents. This system shows what it looks like when an LLM pipeline actually processes them: ingesting worker complaints, schedules, timekeeping records, payroll data, and employer messages, then surfacing contradictions, flagging violations, and scoring risk — all in a format a human investigator can act on immediately.
+Insurance and regulatory workflows are drowning in unstructured documents. This system shows what it looks like when an LLM pipeline actually processes them: ingesting worker complaints, schedules, timekeeping records, payroll data, and employer messages, then surfacing contradictions, flagging violations, and scoring risk. We do this in a format a human investigator can act on immediately.
 
 ---
 
@@ -48,7 +48,7 @@ Recommended: Request full payroll register; confirm break documentation; verify 
 | Violation detection precision | 60.0% — some over-flagging (acceptable for investigative use) |
 | Exact match accuracy | 54.5% |
 
-For investigative tools, high recall is the right trade-off: it's better to surface a potential violation for human review than to miss a genuine one. The system is designed to support — not replace — investigator judgment.
+For investigative tools, high recall is the right trade-off: it's better to surface a potential violation for human review than to miss a genuine one. The system is designed to support, not replace, investigator judgment.
 
 ---
 
@@ -156,4 +156,4 @@ The client falls back to mock automatically if a provider's key is missing.
 
 ## Design philosophy
 
-The pipeline is transparent by design. The mock extraction path uses readable regex/rule-based logic so the full workflow is reproducible without any API keys. The same schemas, reconciliation logic, risk scoring, and evaluation framework run identically whether the extraction comes from Claude, GPT-4, or mock mode — making it easy to swap providers or benchmark them head to head.
+The pipeline is transparent by design. The mock extraction path uses readable regex/rule-based logic so the full workflow is reproducible without any API keys. The same schemas, reconciliation logic, risk scoring, and evaluation framework run identically whether the extraction comes from Claude, GPT-4, or mock mode. This makes it easy to swap providers or benchmark them head to head.
